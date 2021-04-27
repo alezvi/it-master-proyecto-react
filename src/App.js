@@ -1,24 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import ItemsList from './ItemsList'
 
-function App() {
+function App() {  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Curso de desarrollo web.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          IT Master
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App-header"></div>
+      <div className="App-navigation"></div>
+
+      <ItemsList />
+    </>
   );
 }
 
