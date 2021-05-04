@@ -1,8 +1,6 @@
 import items from './items.js'
 import {useState} from 'react'
 
-// hooks
-
 function ItemsList() {
     var [page, setPage] = useState(0)
 
