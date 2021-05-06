@@ -1,5 +1,6 @@
-import items from './items.js'
 import {useState} from 'react'
+import {Link} from 'react-router-dom'
+import items from './items.js'
 
 function ItemsList() {
     var [page, setPage] = useState(0)
@@ -23,7 +24,8 @@ function ItemsList() {
                     pages[page].map(function (dato) {
                         return <div className="App-item" key={dato.id}>
                         <img src={dato.image} />
-                        {dato.title}
+
+                        <Link >{dato.title}</Link>
                         </div>
                     })
                 }

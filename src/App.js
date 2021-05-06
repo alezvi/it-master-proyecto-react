@@ -4,6 +4,7 @@ import {useState} from 'react'
 import Home from './Home'
 import Contact from './Contact'
 import NotFound from './404'
+import ProductDetail from './ProductDetail'
 import {
   BrowserRouter as Router,
   Route,
@@ -16,6 +17,10 @@ function App() {
       <Switch>
         <Route path="/contacto">
           <Contact />
+        </Route>
+
+        <Route path="/productos/:id">
+          <ProductDetail />
         </Route>
         
         <Route path="/" exact>
