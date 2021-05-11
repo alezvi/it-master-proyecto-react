@@ -7,7 +7,8 @@ function ProductDetail() {
     var [producto, setProducto] = useState({})
 
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/posts/' + id).then(function (res) {
+        // API
+        fetch('http://localhost:3001/posts/' + id).then(function (res) {
             return res.json()
         }).then(function (item) {
             setProducto(item)

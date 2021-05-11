@@ -25,7 +25,7 @@ function ItemsList() {
                         return <div className="App-item" key={dato.id}>
                         <img src={dato.image} />
 
-                        <Link >{dato.title}</Link>
+                        <Link to={`productos/${dato.id}`}>{dato.title}</Link>
                         </div>
                     })
                 }
