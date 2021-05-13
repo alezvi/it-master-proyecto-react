@@ -5,6 +5,7 @@ import Home from './Home'
 import Contact from './Contact'
 import NotFound from './404'
 import ProductDetail from './ProductDetail'
+import Cart from './pages/Cart'
 import {
   BrowserRouter as Router,
   Route,
@@ -15,6 +16,10 @@ function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/cart">
+          <Cart />
+        </Route>
+
         <Route path="/contacto">
           <Contact />
         </Route>
